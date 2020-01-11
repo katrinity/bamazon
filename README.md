@@ -25,12 +25,14 @@ Once the update goes through, show the customer the total cost of their purchase
 **Manager Module**
 
 Running this application will a set of menu options:
-View Products for Sale
-View Low Inventory
-Add to Inventory
-Add New Product
+1. View Products for Sale
+2. View Low Inventory
+3. Add to Inventory
+4. Add New Product
 
-<img width="530" alt="4" src="https://user-images.githubusercontent.com/42060484/72202487-eee1ff00-3414-11ea-8a46-464dce7f6b5c.png">
+<img width="378" alt="Screen Shot 2020-01-11 at 1 58 53 AM" src="https://user-images.githubusercontent.com/42060484/72202583-18e7f100-3416-11ea-8d88-4b76d80f37c3.png">
+
+
 
 
 If a manager selects View Products for Sale, the app should list every available item: the item IDs, names, prices, and quantities.
@@ -42,9 +44,11 @@ If a manager selects View Low Inventory, then it should list all items with an i
 <img width="595" alt="2" src="https://user-images.githubusercontent.com/42060484/72202469-b4786200-3414-11ea-9f41-bb769b254be0.png">
 
 If a manager selects Add to Inventory, your app should display a prompt that will let the manager "add more" of any item currently in the store.
+
 <img width="511" alt="3" src="https://user-images.githubusercontent.com/42060484/72202510-34063100-3415-11ea-9ce7-158d2726a0c9.png">
 
 If a manager selects Add New Product, it should allow the manager to add a completely new product to the store.
+
 <img width="530" alt="4" src="https://user-images.githubusercontent.com/42060484/72202503-22248e00-3415-11ea-8cba-54ec92f5c4ed.png">
 
 
