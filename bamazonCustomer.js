@@ -11,9 +11,7 @@ var connection = mysql.createConnection({
 
 connection.connect(function (err) {
     if (err) throw err;
-
     displayItems();
-
 });
 
 // display all of the items available for sale. Include the ids, names, and prices of products for sale.
@@ -54,25 +52,27 @@ var requestProductInfo = function () {
             return false
         }
     }]).then(function (answer) {
-        console.log(answer)
-        var query = "Select stock_quantity, price, department_name FROM products WHERE products.item_id=?";
+
+        // console.log(answer)
+        var query = "SELECT item_id, stock_quantity, price, department_name FROM products WHERE products.item_id=?";
         connection.query(query, [parseInt(answer.productID)], function (err, res) {
 
             if (err) throw err;
             console.table(res)
-            console.log(res)
-            for (let index = 0; index < res.length; index++) {
-                const element = res[index];
-                console.log(element.stock_quantity)
-            }
+            //console.log(res)
+            // for (let index = 0; index < res.length; index++) {
+            //     const element = res[index];
+            //     console.log(element.stock_quantity)
+            // }
             if (res[0].stock_quantity >= answer.productQt) {
-                console.log("completePurchase")
+                //console.log("Complete Purchase")
                 //quary to update product table. set stock_quitity to be substructed by the answer quantity
                 completePurchase()
 
             } else {
-                console.log("Sorry, we do not have enough items in stock");
-
+                console.log("Insufficient quantity!");
+                console.log("Please modify your order");
+                requestProductInfo();
             }
         })
     })

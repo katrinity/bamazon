@@ -14,6 +14,8 @@ CREATE TABLE products(
 );
 
 
+	   Select * From products;
+
 
 INSERT INTO products (product_name, department_name, price, stock_quantity) 
 VALUES ( "sneakers", "footwear", 34.99, 15),
@@ -27,3 +29,5 @@ VALUES ( "sneakers", "footwear", 34.99, 15),
 	   ("tote", "handbag", 12.50, 24),
 	   ("clutch", "handbag", 49.99, 17)
 
+
+-- ALTER TABLE products ADD COLUMN product_sales DECIMAL(10,2) DEFAULT '0.00';
