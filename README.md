@@ -19,6 +19,8 @@ If not, the app should log a phrase like Insufficient quantity!, and then preven
 
 However, if your store does have enough of the product, you should fulfill the customer's order.
 
+<img width="585" alt="Screen Shot 2020-01-11 at 2 38 27 AM" src="https://user-images.githubusercontent.com/42060484/72203044-919d7c00-341b-11ea-8de5-d7ff6fafceba.png">
+
 This means updating the SQL database to reflect the remaining quantity.
 Once the update goes through, show the customer the total cost of their purchase.
 
